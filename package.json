@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://m4shaikh.xyz",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -35,7 +36,10 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +63,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.22.15",
     "eslint-config-prettier": "^10.1.1",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.5.3"
   }
 }
